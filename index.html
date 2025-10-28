@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end Development Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="quiz-data.json" as="fetch" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Landing Page Section -->
+    <section id="landing-section" class="section active">
+        <div class="container">
+            <header class="header">
+                <h1>🧩 Front-end Development Quiz</h1>
+                <p>Test your knowledge in HTML, CSS, and JavaScript</p>
+            </header>
+            
+            <div class="form-container">
+                <form id="student-form" novalidate>
+                    <div class="form-group">
+                        <label for="student-name">Full Name *</label>
+                        <input 
+                            type="text" 
+                            id="student-name" 
+                            name="studentName" 
+                            required 
+                            aria-describedby="name-error"
+                            autocomplete="name"
+                        >
+                        <div id="name-error" class="error-message" aria-live="polite"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="whatsapp-number">WhatsApp Phone Number *</label>
+                        <input 
+                            type="tel" 
+                            id="whatsapp-number" 
+                            name="whatsappNumber" 
+                            required 
+                            aria-describedby="phone-error"
+                            placeholder="e.g., 09012345678"
+                            pattern="[0-9]{11,15}"
+                            autocomplete="tel"
+                        >
+                        <div id="phone-error" class="error-message" aria-live="polite"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            aria-describedby="email-error"
+                            autocomplete="email"
+                        >
+                        <div id="email-error" class="error-message" aria-live="polite"></div>
+                    </div>
+                    
+                    <button type="submit" id="start-exam-btn" class="btn btn-primary" disabled>
+                        Start Exam
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz-section" class="section">
+        <div class="container">
+            <!-- Quiz Header -->
+            <header class="quiz-header">
+                <div class="quiz-info">
+                    <h2 id="subject-title">HTML Quiz</h2>
+                    <div class="progress-info">
+                        <span id="progress-text">Question 1 of 10</span>
+                        <div class="progress-bar">
+                            <div id="progress-fill" class="progress-fill" style="width: 10%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timer-container">
+                    <div id="timer" class="timer">
+                        <span class="timer-label">Time Remaining:</span>
+                        <span id="timer-display" class="timer-display">20:00</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Question Display -->
+            <main class="question-container">
+                <div id="question-display" class="question">
+                    <h3 id="question-text" class="question-text">
+                        Loading question...
+                    </h3>
+                    <div id="options-container" class="options" role="radiogroup" aria-labelledby="question-text">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                </div>
+            </main>
+
+            <!-- Navigation Controls -->
+            <nav class="quiz-navigation">
+                <button id="prev-btn" class="btn btn-secondary" disabled>
+                    ← Previous
+                </button>
+                <div class="nav-center">
+                    <button id="submit-subject-btn" class="btn btn-warning">
+                        Submit Subject
+                    </button>
+                </div>
+                <button id="next-btn" class="btn btn-secondary">
+                    Next →
+                </button>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Subject Results Section -->
+    <section id="subject-results-section" class="section">
+        <div class="container">
+            <div class="results-container">
+                <h2 id="subject-results-title">HTML Quiz Results</h2>
+                <div class="subject-score">
+                    <div class="score-display">
+                        <span id="subject-score-text">8/10</span>
+                        <span class="score-label">Correct Answers</span>
+                    </div>
+                    <div class="time-display">
+                        <span id="subject-time-text">15:30</span>
+                        <span class="time-label">Time Taken</span>
+                    </div>
+                </div>
+                <div class="results-actions">
+                    <button id="continue-btn" class="btn btn-primary">
+                        Continue to CSS Quiz
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Results Section -->
+    <section id="final-results-section" class="section">
+        <div class="container">
+            <div class="final-results-container">
+                <header class="results-header">
+                    <h2>🎉 Quiz Completed!</h2>
+                    <p>Here are your final results:</p>
+                </header>
+
+                <div class="student-info">
+                    <h3>Student Details</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span id="final-student-name">John Doe</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span id="final-student-email">john@example.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">WhatsApp:</span>
+                            <span id="final-student-phone">09012345678</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scores-summary">
+                    <h3>Scores Summary</h3>
+                    <div class="scores-grid">
+                        <div class="score-item">
+                            <span class="score-subject">HTML:</span>
+                            <span id="final-html-score" class="score-value">8/10</span>
+                            <span id="final-html-time" class="score-time">15:30</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="score-subject">CSS:</span>
+                            <span id="final-css-score" class="score-value">7/10</span>
+                            <span id="final-css-time" class="score-time">18:45</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="score-subject">JavaScript:</span>
+                            <span id="final-js-score" class="score-value">9/10</span>
+                            <span id="final-js-time" class="score-time">16:20</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="total-summary">
+                    <div class="total-score">
+                        <span class="total-label">Total Score:</span>
+                        <span id="final-total-score" class="total-value">24/30</span>
+                    </div>
+                    <div class="total-time">
+                        <span class="total-label">Total Time:</span>
+                        <span id="final-total-time" class="total-value">50:35</span>
+                    </div>
+                </div>
+
+                <div class="results-actions">
+                    <button id="whatsapp-btn" class="btn btn-success">
+                        📱 Send Results to WhatsApp
+                    </button>
+                    <button id="restart-btn" class="btn btn-secondary">
+                        🔄 Start New Quiz
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading quiz data...</p>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="error-modal" class="modal" role="dialog" aria-labelledby="error-title" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="error-title">⚠️ Error</h3>
+            </div>
+            <div class="modal-body">
+                <p id="error-message">An error occurred while loading the quiz.</p>
+                <div id="fallback-message" style="display: none;">
+                    <p><strong>Manual WhatsApp Message:</strong></p>
+                    <textarea id="fallback-text" readonly rows="10" class="fallback-textarea"></textarea>
+                    <button id="copy-fallback-btn" class="btn btn-secondary">Copy Message</button>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button id="close-error-btn" class="btn btn-primary">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

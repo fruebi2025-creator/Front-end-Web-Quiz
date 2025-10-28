@@ -1,0 +1,1328 @@
+{
+  "HTML": [
+    {
+      "id": 1,
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Text Markup Language",
+        "High Text Making Language",
+        "Hyperlinks and Text Markup Language",
+        "Hyper Tool Multi Language"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 2,
+      "question": "Which tag is used to create a hyperlink?",
+      "options": [
+        "<link>",
+        "<a>",
+        "<href>",
+        "<hyper>"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 3,
+      "question": "Which HTML tag defines the largest heading?",
+      "options": [
+        "<heading>",
+        "<h6>",
+        "<h1>",
+        "<head>"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 4,
+      "question": "Which element is used to insert a line break?",
+      "options": [
+        "<break>",
+        "<lb>",
+        "<br>",
+        "<ln>"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 5,
+      "question": "Which tag is used for inserting an image?",
+      "options": [
+        "<img>",
+        "<src>",
+        "<picture>",
+        "<image>"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 6,
+      "question": "Which attribute specifies the image source in <img>?",
+      "options": [
+        "alt",
+        "src",
+        "href",
+        "link"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 7,
+      "question": "What is the correct HTML for adding a background color?",
+      "options": [
+        "<body color=\"blue\">",
+        "<background>blue</background>",
+        "<body style=\"background-color:blue;\">",
+        "<bg>blue</bg>"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 8,
+      "question": "Choose the correct HTML element for the largest heading.",
+      "options": [
+        "<h6>",
+        "<head>",
+        "<h1>",
+        "<heading>"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 9,
+      "question": "Which HTML element is used to define emphasized text?",
+      "options": [
+        "<i>",
+        "<em>",
+        "<italic>",
+        "<strong>"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 10,
+      "question": "Which tag is used to create an unordered list?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 11,
+      "question": "Which tag is used to define a table row?",
+      "options": [
+        "<th>",
+        "<tr>",
+        "<td>",
+        "<table-row>"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 12,
+      "question": "Which tag defines a form?",
+      "options": [
+        "<input>",
+        "<form>",
+        "<textarea>",
+        "<fieldset>"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 13,
+      "question": "The <title> element must be inside:",
+      "options": [
+        "<head>",
+        "<body>",
+        "<footer>",
+        "<header>"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 14,
+      "question": "Which HTML attribute specifies an alternate text for an image?",
+      "options": [
+        "src",
+        "title",
+        "alt",
+        "description"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 15,
+      "question": "How can you make a numbered list?",
+      "options": [
+        "<dl>",
+        "<ul>",
+        "<list>",
+        "<ol>"
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": 16,
+      "question": "What is the correct HTML element for inserting a line?",
+      "options": [
+        "<line>",
+        "<hr>",
+        "<break>",
+        "<border>"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 17,
+      "question": "How do you make text bold?",
+      "options": [
+        "<b>",
+        "<bold>",
+        "<bb>",
+        "<strongtext>"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 18,
+      "question": "What does <th> stand for?",
+      "options": [
+        "Table Header",
+        "Table Head",
+        "Table Heading",
+        "Text Header"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 19,
+      "question": "Which tag is used for inserting JavaScript?",
+      "options": [
+        "<script>",
+        "<js>",
+        "<javascript>",
+        "<code>"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 20,
+      "question": "The correct HTML for creating a checkbox is:",
+      "options": [
+        "<checkbox>",
+        "<input type=\"checkbox\">",
+        "<check>",
+        "<box>"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 21,
+      "question": "Which element is used for the footer section?",
+      "options": [
+        "<foot>",
+        "<bottom>",
+        "<footer>",
+        "<end>"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 22,
+      "question": "How do you create a dropdown list?",
+      "options": [
+        "<dropdown>",
+        "<select>",
+        "<list>",
+        "<option>"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 23,
+      "question": "Which tag is used to group content?",
+      "options": [
+        "<div>",
+        "<span>",
+        "<group>",
+        "<section>"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 24,
+      "question": "Which tag is used for inline text grouping?",
+      "options": [
+        "<div>",
+        "<span>",
+        "<p>",
+        "<inline>"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 25,
+      "question": "Which element represents navigation links?",
+      "options": [
+        "<nav>",
+        "<menu>",
+        "<link>",
+        "<navigation>"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 26,
+      "question": "The <meta> tag is used for:",
+      "options": [
+        "Metadata",
+        "Scripts",
+        "Styling",
+        "Layout"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 27,
+      "question": "How do you specify comments in HTML?",
+      "options": [
+        "// comment",
+        "# comment",
+        "<!-- comment -->",
+        "comment"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 28,
+      "question": "Which tag defines the document body?",
+      "options": [
+        "<html>",
+        "<head>",
+        "<body>",
+        "<content>"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 29,
+      "question": "Which input type is used for passwords?",
+      "options": [
+        "text",
+        "password",
+        "pass",
+        "hidden"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 30,
+      "question": "Which tag is used to display preformatted text?",
+      "options": [
+        "<code>",
+        "<pre>",
+        "<text>",
+        "<fixed>"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 31,
+      "question": "Which element defines a section of navigation links?",
+      "options": [
+        "<section>",
+        "<menu>",
+        "<nav>",
+        "<aside>"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 32,
+      "question": "The <iframe> tag is used for:",
+      "options": [
+        "Image frames",
+        "Inline frames",
+        "Form fields",
+        "Divisions"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 33,
+      "question": "What is the purpose of <label> tag?",
+      "options": [
+        "Adds captions to images",
+        "Associates text with form controls",
+        "Adds tooltips",
+        "None"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 34,
+      "question": "Which element is used for adding audio?",
+      "options": [
+        "<sound>",
+        "<music>",
+        "<audio>",
+        "<media>"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 35,
+      "question": "Which attribute specifies a unique identifier for an element?",
+      "options": [
+        "class",
+        "id",
+        "style",
+        "name"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 36,
+      "question": "Which HTML tag is used to define the title of a table?",
+      "options": [
+        "<caption>",
+        "<title>",
+        "<thead>",
+        "<summary>"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 37,
+      "question": "Which HTML tag defines a paragraph?",
+      "options": [
+        "<para>",
+        "<p>",
+        "<text>",
+        "<pg>"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 38,
+      "question": "Which element is used to embed a video?",
+      "options": [
+        "<media>",
+        "<video>",
+        "<movie>",
+        "<vid>"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 39,
+      "question": "HTML comments start with:",
+      "options": [
+        "<!--",
+        "//",
+        "#",
+        "/*"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 40,
+      "question": "HTML5 semantic elements include:",
+      "options": [
+        "<div>, <span>",
+        "<header>, <footer>",
+        "<bold>, <italic>",
+        "<meta>, <title>"
+      ],
+      "answerIndex": 1
+    }
+  ],
+  "CSS": [
+    {
+      "id": 41,
+      "question": "What does CSS stand for?",
+      "options": [
+        "Creative Style System",
+        "Cascading Style Sheets",
+        "Computer Styling Syntax",
+        "Colorful Style Sheets"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 42,
+      "question": "Which tag is used to link an external CSS file?",
+      "options": [
+        "<style>",
+        "<css>",
+        "<link>",
+        "<stylesheet>"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 43,
+      "question": "Which HTML attribute is used to define inline styles?",
+      "options": [
+        "font",
+        "class",
+        "style",
+        "styles"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 44,
+      "question": "How do you add a background color in CSS?",
+      "options": [
+        "color: red;",
+        "background: red;",
+        "background-color: red;",
+        "bgcolor: red;"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 45,
+      "question": "How do you center text?",
+      "options": [
+        "text-align: center;",
+        "align: center;",
+        "font-align: center;",
+        "center: true;"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 46,
+      "question": "Which property is used to change text color?",
+      "options": [
+        "background-color",
+        "text-color",
+        "color",
+        "font-color"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 47,
+      "question": "Which property changes font size?",
+      "options": [
+        "text-size",
+        "font-size",
+        "size",
+        "text-font"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 48,
+      "question": "What does 'px' stand for?",
+      "options": [
+        "Pixels",
+        "Percent",
+        "Points",
+        "Picas"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 49,
+      "question": "Which symbol is used to select a class in CSS?",
+      "options": [
+        "#",
+        ".",
+        "*",
+        "@"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 50,
+      "question": "Which symbol is used to select an ID?",
+      "options": [
+        "#",
+        ".",
+        "%",
+        "$"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 51,
+      "question": "How do you make text bold using CSS?",
+      "options": [
+        "font-bold: true;",
+        "text-weight: bold;",
+        "font-weight: bold;",
+        "bold: yes;"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 52,
+      "question": "How do you apply styles to all <p> elements?",
+      "options": [
+        "p { }",
+        "#p { }",
+        ".p { }",
+        "*p { }"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 53,
+      "question": "The property border-radius is used to:",
+      "options": [
+        "Add a border",
+        "Round corners",
+        "Add shadows",
+        "Add outlines"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 54,
+      "question": "The property used to add space inside an element:",
+      "options": [
+        "margin",
+        "border",
+        "padding",
+        "spacing"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 55,
+      "question": "The property used to add space outside an element:",
+      "options": [
+        "padding",
+        "margin",
+        "outline",
+        "border"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 56,
+      "question": "Which value makes an element hidden?",
+      "options": [
+        "display: none;",
+        "visibility: hidden;",
+        "Both A and B",
+        "hide: true;"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 57,
+      "question": "How do you make text italic in CSS?",
+      "options": [
+        "font-style: italic;",
+        "text-style: italic;",
+        "style: italic;",
+        "text-italic: true;"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 58,
+      "question": "To underline text:",
+      "options": [
+        "text-decoration: underline;",
+        "text-style: underline;",
+        "underline: yes;",
+        "decoration: underline;"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 59,
+      "question": "The default position value is:",
+      "options": [
+        "relative",
+        "static",
+        "fixed",
+        "absolute"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 60,
+      "question": "The property to control element height:",
+      "options": [
+        "size",
+        "height",
+        "width",
+        "length"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 61,
+      "question": "To align items horizontally in Flexbox:",
+      "options": [
+        "align-items",
+        "justify-content",
+        "text-align",
+        "float"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 62,
+      "question": "To change the cursor to a pointer:",
+      "options": [
+        "cursor: hand;",
+        "pointer: true;",
+        "cursor: pointer;",
+        "mouse: pointer;"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 63,
+      "question": "CSS comments are written as:",
+      "options": [
+        "<!-- -->",
+        "/* */",
+        "//",
+        ""
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 64,
+      "question": "The z-index property controls:",
+      "options": [
+        "Layer order",
+        "Text color",
+        "Font size",
+        "Padding"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 65,
+      "question": "display: flex; is used for:",
+      "options": [
+        "Grids",
+        "Flexible layouts",
+        "Fixed layouts",
+        "Floats"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 66,
+      "question": "To make a list horizontal:",
+      "options": [
+        "list-style: inline;",
+        "display: inline;",
+        "display: inline-block;",
+        "display: list;"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 67,
+      "question": "To remove list bullets:",
+      "options": [
+        "list-style: none;",
+        "list-bullets: off;",
+        "no-bullets: true;",
+        "bullet: none;"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 68,
+      "question": "CSS Grid uses:",
+      "options": [
+        "rows and columns",
+        "lines and shapes",
+        "blocks only",
+        "flex only"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 69,
+      "question": "Property to control text spacing:",
+      "options": [
+        "word-space",
+        "letter-spacing",
+        "text-gap",
+        "space"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 70,
+      "question": "How do you import a font?",
+      "options": [
+        "@font {}",
+        "@import",
+        "@font-face",
+        "font-style"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 71,
+      "question": "To make background fixed:",
+      "options": [
+        "background-attachment: fixed;",
+        "background-type: fixed;",
+        "attach: fixed;",
+        "background: fixed;"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 72,
+      "question": "Which unit is relative to the root font size?",
+      "options": [
+        "em",
+        "rem",
+        "%",
+        "px"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 73,
+      "question": "The default display of <div> is:",
+      "options": [
+        "inline",
+        "block",
+        "flex",
+        "grid"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 74,
+      "question": "To add a shadow to text:",
+      "options": [
+        "text-shadow",
+        "box-shadow",
+        "shadow",
+        "font-shadow"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 75,
+      "question": "To make a border dashed:",
+      "options": [
+        "border-type: dash;",
+        "border-style: dashed;",
+        "border: dashed;",
+        "border: 1px dash;"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 76,
+      "question": "To make rounded corners:",
+      "options": [
+        "corner-radius",
+        "border-radius",
+        "round-corner",
+        "radius"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 77,
+      "question": "Which property sets background image?",
+      "options": [
+        "background-image",
+        "bg-img",
+        "background",
+        "image"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 78,
+      "question": "To control element width:",
+      "options": [
+        "height",
+        "size",
+        "width",
+        "length"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 79,
+      "question": "Which selector targets all <p> inside <div>?",
+      "options": [
+        "div p",
+        "div+p",
+        "div.p",
+        "p>div"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 80,
+      "question": "Which selector targets an element with both classes 'btn' and 'primary'?",
+      "options": [
+        ".btn.primary",
+        "#btn.primary",
+        "btn, primary",
+        ".btn .primary"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "JS": [
+    {
+      "id": 81,
+      "question": "What does JS stand for?",
+      "options": [
+        "JavaSyntax",
+        "JavaScript",
+        "JustScript",
+        "JScript"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 82,
+      "question": "Where should JavaScript code be placed in HTML?",
+      "options": [
+        "In the <body> or <head>",
+        "Only <head>",
+        "Only <body>",
+        "In <footer>"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 83,
+      "question": "How do you write \"Hello World\" in an alert box?",
+      "options": [
+        "msg(\"Hello World\")",
+        "alert(\"Hello World\")",
+        "print(\"Hello World\")",
+        "prompt(\"Hello World\")"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 84,
+      "question": "Which symbol is used for comments in JS?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "/* */",
+        "Both B and C"
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": 85,
+      "question": "How do you declare a variable?",
+      "options": [
+        "var",
+        "variable",
+        "v",
+        "let var"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 86,
+      "question": "Which keyword creates a constant variable?",
+      "options": [
+        "let",
+        "const",
+        "var",
+        "define"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 87,
+      "question": "How do you create a function?",
+      "options": [
+        "func myFunction()",
+        "function myFunction()",
+        "def myFunction()",
+        "new Function()"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 88,
+      "question": "How do you call a function named 'demo'?",
+      "options": [
+        "call demo",
+        "demo()",
+        "call(demo)",
+        "function demo"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 89,
+      "question": "Which operator is used for addition?",
+      "options": [
+        "+",
+        "&",
+        "++",
+        "add"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 90,
+      "question": "Which operator compares value and type?",
+      "options": [
+        "==",
+        "===",
+        "!=",
+        "=>"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 91,
+      "question": "How do you display data in the console?",
+      "options": [
+        "print()",
+        "console.log()",
+        "write()",
+        "alert()"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 92,
+      "question": "How do you get user input?",
+      "options": [
+        "prompt()",
+        "input()",
+        "alert()",
+        "message()"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 93,
+      "question": "What is the correct syntax for an if statement?",
+      "options": [
+        "if condition: {}",
+        "if (condition) {}",
+        "if {condition}",
+        "if condition()"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 94,
+      "question": "Which loop repeats until a condition is false?",
+      "options": [
+        "for",
+        "while",
+        "do...while",
+        "loop"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 95,
+      "question": "Which array method adds elements to the end?",
+      "options": [
+        "push()",
+        "pop()",
+        "unshift()",
+        "shift()"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 96,
+      "question": "Which method removes the last element from an array?",
+      "options": [
+        "delete()",
+        "pop()",
+        "remove()",
+        "slice()"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 97,
+      "question": "Arrays are enclosed in:",
+      "options": [
+        "{}",
+        "[]",
+        "()",
+        "<>"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 98,
+      "question": "Objects are enclosed in:",
+      "options": [
+        "{}",
+        "[]",
+        "()",
+        "<>"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 99,
+      "question": "How do you write a comment in JS?",
+      "options": [
+        "<!-- -->",
+        "// comment",
+        "/* comment */",
+        "Both B and C"
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": 100,
+      "question": "The 'length' property is used for:",
+      "options": [
+        "Arrays and strings",
+        "Numbers",
+        "Functions",
+        "None"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 101,
+      "question": "Which function converts a string to integer?",
+      "options": [
+        "int()",
+        "parseInt()",
+        "toInt()",
+        "Number()"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 102,
+      "question": "What keyword exits a loop?",
+      "options": [
+        "end",
+        "stop",
+        "break",
+        "exit"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 103,
+      "question": "Which method adds items at the beginning of an array?",
+      "options": [
+        "push()",
+        "unshift()",
+        "add()",
+        "prepend()"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 104,
+      "question": "How do you access an object property named 'age'?",
+      "options": [
+        "obj[\"age\"]",
+        "obj.age",
+        "Both A and B",
+        "age.obj"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 105,
+      "question": "Which keyword is used to skip one iteration in a loop?",
+      "options": [
+        "stop",
+        "continue",
+        "skip",
+        "next"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 106,
+      "question": "How do you check the type of a variable?",
+      "options": [
+        "typeof",
+        "type()",
+        "check()",
+        "var.type"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 107,
+      "question": "What is an array?",
+      "options": [
+        "A single variable that stores multiple values",
+        "A number",
+        "A string",
+        "A boolean"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 108,
+      "question": "What will console.log(typeof []) return?",
+      "options": [
+        "array",
+        "object",
+        "list",
+        "undefined"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 109,
+      "question": "What does DOM stand for?",
+      "options": [
+        "Document Object Model",
+        "Data Object Management",
+        "Document Oriented Module",
+        "Digital Object Map"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 110,
+      "question": "To select an element by ID:",
+      "options": [
+        "getElementById()",
+        "getById()",
+        "querySelector()",
+        "findElement()"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 111,
+      "question": "Which method changes HTML content?",
+      "options": [
+        "innerText",
+        "innerHTML",
+        "changeText",
+        "text()"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 112,
+      "question": "Which event fires when a user clicks?",
+      "options": [
+        "onhover",
+        "onload",
+        "onclick",
+        "onchange"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": 113,
+      "question": "Which keyword declares a block-scoped variable?",
+      "options": [
+        "var",
+        "let",
+        "const",
+        "both B and C"
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": 114,
+      "question": "How do you concatenate strings?",
+      "options": [
+        "+",
+        ".",
+        "concat",
+        "&"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 115,
+      "question": "What will 2 + \"2\" output?",
+      "options": [
+        "4",
+        "22",
+        "error",
+        "NaN"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 116,
+      "question": "What does NaN mean?",
+      "options": [
+        "No any number",
+        "Not a Number",
+        "New a number",
+        "None"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 117,
+      "question": "Which function rounds a number down?",
+      "options": [
+        "Math.round()",
+        "Math.floor()",
+        "Math.ceil()",
+        "Math.down()"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 118,
+      "question": "Which function generates a random number?",
+      "options": [
+        "random()",
+        "Math.random()",
+        "number.random()",
+        "rand()"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": 119,
+      "question": "Which operator is used to assign values?",
+      "options": [
+        "=",
+        "==",
+        "===",
+        ":="
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": 120,
+      "question": "Which keyword defines a class?",
+      "options": [
+        "function",
+        "class",
+        "object",
+        "def"
+      ],
+      "answerIndex": 1
+    }
+  ]
+}
