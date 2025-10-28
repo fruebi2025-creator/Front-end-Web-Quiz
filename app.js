@@ -96,7 +96,6 @@ class QuizApp {
             restartBtn: document.getElementById('restart-btn'),
             
             // Loading and error
-            loadingOverlay: document.getElementById('loading-overlay'),
             errorModal: document.getElementById('error-modal'),
             errorMessage: document.getElementById('error-message'),
             fallbackMessage: document.getElementById('fallback-message'),
@@ -121,22 +120,23 @@ class QuizApp {
         try {
             console.log('Preloading quiz data in background...');
             
-            // Only show subtle button animation, no overlay
             const startBtn = this.elements.startExamBtn;
             if (startBtn) {
                 startBtn.classList.add('loading');
-                startBtn.title = 'Loading quiz data...';
+                startBtn.textContent = 'Loading Questions...';
+                startBtn.title = 'Loading 30 questions (10 per subject)...';
             }
             
-            // Load data silently in background (no overlay)
+            // Load data silently in background
             await this.loadQuizData();
             console.log('Quiz data preloaded successfully');
             
-            // Show success indication on button only
+            // Show success indication on button
             if (startBtn && this.state.quizData) {
                 startBtn.classList.remove('loading');
-                startBtn.style.background = 'linear-gradient(135deg, #16a34a, #15803d)';
-                startBtn.title = 'Quiz data loaded and ready! Click to start.';
+                startBtn.classList.add('ready');
+                startBtn.textContent = 'Start Exam';
+                startBtn.title = '30 questions loaded and ready! Click to start.';
                 
                 // Add a subtle success animation
                 startBtn.style.transform = 'scale(1.02)';
@@ -147,12 +147,11 @@ class QuizApp {
         } catch (error) {
             console.warn('Failed to preload quiz data:', error.message);
             
-            // Remove loading animation and reset button
             const startBtn = this.elements.startExamBtn;
             if (startBtn) {
                 startBtn.classList.remove('loading');
+                startBtn.textContent = 'Start Exam';
                 startBtn.title = 'Quiz data will load when you click start';
-                startBtn.style.background = ''; // Reset to default
             }
         }
     }
@@ -284,24 +283,15 @@ class QuizApp {
         // Check if data is already preloaded
         if (this.state.quizData) {
             // Data is ready, start almost immediately
-            this.showLoading('Starting your quiz...');
-            setTimeout(() => {
-                this.startQuiz();
-                this.hideLoading();
-            }, 50);
+            this.startQuiz();
         } else {
-            // Data not preloaded, load now with minimal delay
-            this.showLoading('Loading quiz data...');
-            
+            // Data not preloaded, load now
             try {
                 await this.loadQuizData();
-                // Start immediately after loading, no additional delay
                 this.startQuiz();
             } catch (error) {
                 console.error('Quiz loading error:', error);
                 this.showError('Failed to load quiz data. Please check your internet connection and try again.', error.message);
-            } finally {
-                this.hideLoading();
             }
         }
     }
@@ -507,16 +497,34 @@ class QuizApp {
             const optionId = `option-${index}`;
             const isSelected = this.state.answers[subjectName][question.id] === index;
             
-            optionElement.innerHTML = `
-                <input type="radio" id="${optionId}" name="current-question" value="${index}" ${isSelected ? 'checked' : ''}>
-                <label for="${optionId}">
-                    <span class="option-indicator"></span>
-                    <span class="option-text">${option}</span>
-                </label>
-            `;
+            // Create input
+            const input = document.createElement('input');
+            input.type = 'radio';
+            input.id = optionId;
+            input.name = 'current-question';
+            input.value = index;
+            if (isSelected) input.checked = true;
+            
+            // Create label
+            const label = document.createElement('label');
+            label.htmlFor = optionId;
+            
+            // Create indicator
+            const indicator = document.createElement('span');
+            indicator.className = 'option-indicator';
+            
+            // Create option text (using textContent to prevent HTML interpretation)
+            const optionText = document.createElement('span');
+            optionText.className = 'option-text';
+            optionText.textContent = option;
+            
+            // Assemble elements
+            label.appendChild(indicator);
+            label.appendChild(optionText);
+            optionElement.appendChild(input);
+            optionElement.appendChild(label);
             
             // Add event listener for selection
-            const input = optionElement.querySelector('input');
             input.addEventListener('change', () => {
                 this.selectAnswer(question.id, index);
             });
@@ -809,26 +817,6 @@ Total Time: ${this.formatTime(totalTime)}`;
         
         // Show target section
         document.getElementById(sectionId).classList.add('active');
-    }
-
-    showLoading(message = 'Loading quiz data...') {
-        // Add a small delay to prevent flash for very quick operations
-        this.loadingTimeout = setTimeout(() => {
-            this.elements.loadingOverlay.classList.remove('hidden');
-            const loadingText = this.elements.loadingOverlay.querySelector('p');
-            if (loadingText) {
-                loadingText.textContent = message;
-            }
-        }, 100);
-    }
-
-    hideLoading() {
-        // Clear the loading timeout if it hasn't fired yet
-        if (this.loadingTimeout) {
-            clearTimeout(this.loadingTimeout);
-            this.loadingTimeout = null;
-        }
-        this.elements.loadingOverlay.classList.add('hidden');
     }
 
     showError(message, details = '') {

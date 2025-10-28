@@ -287,6 +287,11 @@ input[type="email"]:invalid:focus {
     transition: all var(--transition-normal);
 }
 
+#start-exam-btn.loading {
+    background: var(--color-gray-400) !important;
+    cursor: wait;
+}
+
 #start-exam-btn.loading::before {
     content: '';
     position: absolute;
@@ -294,13 +299,20 @@ input[type="email"]:invalid:focus {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
-    animation: shimmer 2s infinite;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    animation: shimmer 1.5s infinite;
+}
+
+#start-exam-btn.ready {
+    background: linear-gradient(135deg, #16a34a, #15803d) !important;
+}
+
+#start-exam-btn.ready::after {
+    content: ' ✓';
 }
 
 @keyframes shimmer {
     0% { left: -100%; }
-    50% { left: 100%; }
     100% { left: 100%; }
 }
 
