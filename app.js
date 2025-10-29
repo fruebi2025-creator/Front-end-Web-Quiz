@@ -38,7 +38,7 @@ class QuizApp {
             },
             timer: {
                 startTime: null,
-                timeRemaining: 20 * 60 * 1000, // 20 minutes in milliseconds
+                timeRemaining: 5 * 60 * 1000, // 5 minutes in milliseconds
                 interval: null
             },
             isQuizActive: false
@@ -423,7 +423,7 @@ class QuizApp {
         this.elements.subjectTitle.textContent = title;
         
         // Reset timer for new subject
-        this.state.timer.timeRemaining = 20 * 60 * 1000; // 20 minutes
+        this.state.timer.timeRemaining = 5 * 60 * 1000; // 5 minutes
         this.state.timer.startTime = Date.now();
         
         // Update navigation
@@ -432,7 +432,7 @@ class QuizApp {
 
     startTimer() {
         this.state.timer.startTime = Date.now();
-        this.state.timer.timeRemaining = 20 * 60 * 1000;
+        this.state.timer.timeRemaining = 5 * 60 * 1000;
         
         // Clear any existing timer
         if (this.state.timer.interval) {
@@ -461,10 +461,10 @@ class QuizApp {
         const timerElement = this.elements.timer;
         timerElement.classList.remove('warning', 'danger');
         
-        if (remaining <= 5 * 60 * 1000) { // 5 minutes or less
+        if (remaining <= 2 * 60 * 1000) { // 5 minutes or less
             timerElement.classList.add('warning');
         }
-        if (remaining <= 2 * 60 * 1000) { // 2 minutes or less
+        if (remaining <= 1 * 60 * 1000) { // 2 minutes or less
             timerElement.classList.add('danger');
         }
         
@@ -591,7 +591,7 @@ class QuizApp {
         
         // Calculate time spent
         const elapsed = Date.now() - this.state.timer.startTime;
-        const timeSpent = Math.min(elapsed, 20 * 60 * 1000); // Cap at 20 minutes
+        const timeSpent = Math.min(elapsed, 5 * 60 * 1000); // Cap at 5 minutes
         const subjectName = this.state.subjects[this.state.currentSubject];
         this.state.times[subjectName] = timeSpent;
         
@@ -703,13 +703,13 @@ class QuizApp {
             const totalTime = this.state.times.HTML + this.state.times.CSS + this.state.times.JS;
             
             const message = `Student: ${this.state.student.name}
-Email: ${this.state.student.email}
-WhatsApp: ${this.state.student.whatsapp}
-Score HTML: ${this.state.scores.HTML}/10
-Score CSS: ${this.state.scores.CSS}/10
-Score JS: ${this.state.scores.JS}/10
-Total Score: ${totalScore}/30
-Total Time: ${this.formatTime(totalTime)}`;
+            Email: ${this.state.student.email}
+            WhatsApp: ${this.state.student.whatsapp}
+            Score HTML: ${this.state.scores.HTML}/10
+            Score CSS: ${this.state.scores.CSS}/10
+            Score JS: ${this.state.scores.JS}/10
+            Total Score: ${totalScore}/30
+            Total Time: ${this.formatTime(totalTime)}`;
 
             const encodedMessage = encodeURIComponent(message);
             const whatsappUrl = `https://wa.me/09163106930?text=${encodedMessage}`;
@@ -728,13 +728,13 @@ Total Time: ${this.formatTime(totalTime)}`;
         const totalTime = this.state.times.HTML + this.state.times.CSS + this.state.times.JS;
         
         const message = `Student: ${this.state.student.name}
-Email: ${this.state.student.email}
-WhatsApp: ${this.state.student.whatsapp}
-Score HTML: ${this.state.scores.HTML}/10
-Score CSS: ${this.state.scores.CSS}/10
-Score JS: ${this.state.scores.JS}/10
-Total Score: ${totalScore}/30
-Total Time: ${this.formatTime(totalTime)}`;
+        Email: ${this.state.student.email}
+        WhatsApp: ${this.state.student.whatsapp}
+        Score HTML: ${this.state.scores.HTML}/10
+        Score CSS: ${this.state.scores.CSS}/10
+        Score JS: ${this.state.scores.JS}/10
+        Total Score: ${totalScore}/30
+        Total Time: ${this.formatTime(totalTime)}`;
 
         this.elements.fallbackText.value = message;
         this.elements.fallbackMessage.style.display = 'block';
@@ -767,7 +767,7 @@ Total Time: ${this.formatTime(totalTime)}`;
             answers: { HTML: {}, CSS: {}, JS: {} },
             scores: { HTML: 0, CSS: 0, JS: 0 },
             times: { HTML: 0, CSS: 0, JS: 0 },
-            timer: { startTime: null, timeRemaining: 20 * 60 * 1000, interval: null },
+            timer: { startTime: null, timeRemaining: 5 * 60 * 1000, interval: null },
             isQuizActive: false
         };
         
